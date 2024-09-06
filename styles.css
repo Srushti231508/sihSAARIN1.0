@@ -1,0 +1,18 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.jumbotron {
+    background: url('museum-banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
