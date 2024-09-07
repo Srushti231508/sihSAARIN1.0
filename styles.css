@@ -94,7 +94,7 @@ main div h3{
     padding: 10px;
     margin: 15px 5px;
     background-color: transparent
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .col-md-12 h3{
     color: rgb(35, 68, 124);
