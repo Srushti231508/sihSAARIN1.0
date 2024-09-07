@@ -19,6 +19,9 @@ div ul li:hover{
 
 .jumbotron-heading{
     color:rgb(255, 255, 255);
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 100%;
 }
 
 

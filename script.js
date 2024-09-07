@@ -136,23 +136,24 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
     // Filter museums based on search input
-    function filterMuseums() {
-        const searchValue = document.getElementById('search-bar').value.toLowerCase();
-        const museums = document.getElementsByClassName('museum-item');
+ function filterMuseums() {
+            // Get search input value
+            let input = document.getElementById('museumSearch').value.toLowerCase();
+            let cards = document.getElementsByClassName('museum-card');
 
-        for (let i = 0; i < museums.length; i++) {
-            const museumTitle = museums[i].getElementsByClassName('card-title')[0].innerText.toLowerCase();
-            if (museumTitle.includes(searchValue)) {
-                museums[i].style.display = '';
-            } else {
-                museums[i].style.display = 'none';
+            // Loop through all museum cards
+            for (let i = 0; i < cards.length; i++) {
+                let museumName = cards[i].getAttribute('data-museum').toLowerCase();
+                
+                // Show or hide cards based on the search query
+                if (museumName.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
             }
         }
-    }
 
-    function selectMuseum(museumName) {
-        window.location.href = `visitor-info.html?museum=${encodeURIComponent(museumName)}`;
-    }
 
     const museums = {
         "National Museum": {
