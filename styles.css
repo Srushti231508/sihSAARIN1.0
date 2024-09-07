@@ -107,6 +107,6 @@ main div h3{
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 1000;
-    height: 50px;
+    z-index: 1;
+   top: 0;
 }
