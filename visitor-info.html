@@ -50,43 +50,7 @@
         </div>
     </footer>
 
-    <script>
-        // Museum data
-        const museums = {
-            "National Museum": {
-                name: "National Museum",
-                description: "Explore the nation's history and cultural heritage with a vast collection of artifacts.",
-                details: "<p>The National Museum offers a comprehensive look into the history of the country, from ancient civilizations to modern times.</p>"
-            },
-            "Art Gallery": {
-                name: "Art Gallery",
-                description: "Immerse yourself in art from different eras and movements.",
-                details: "<p>The Art Gallery showcases pieces from Renaissance to modern art movements.</p>"
-            },
-            "Science Museum": {
-                name: "Science Museum",
-                description: "Discover the wonders of science and technology with interactive exhibits.",
-                details: "<p>The Science Museum offers interactive experiences that highlight technological advancements and scientific discoveries.</p>"
-            }
-        };
-
-        // Get the museum name from the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const museumName = urlParams.get('museum');
-
-        // Display the corresponding museum data
-        if (museums[museumName]) {
-            document.getElementById('museum-name').innerText = museums[museumName].name;
-            document.getElementById('museum-description').innerText = museums[museumName].description;
-            document.getElementById('museum-details').innerHTML = museums[museumName].details;
-        } else {
-            document.getElementById('museum-name').innerText = "Museum not found";
-        }
-
-        // Redirect to buy tickets
-        document.getElementById('buy-ticket-btn').addEventListener('click', function() {
-            window.location.href = `museum-ticket.html?museum=${encodeURIComponent(museumName)}`;
-        });
+    <script src="script.js">
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
