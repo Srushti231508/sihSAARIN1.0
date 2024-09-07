@@ -49,3 +49,46 @@ div p{
 form div label{
     color: rgb(196, 191, 191);
 }
+
+main div h1{
+    color:rgb(68, 65, 65);
+    background-color: rgb(230, 183, 183);
+    text-align: center;
+    border-radius: 15px;
+}
+
+main div h3{
+    color: beige;
+}
+.col-md-6{
+    /* background-color: bisque;
+    border-radius: 30px;
+    width: 100px; */
+    padding: 20px;
+    border: 2px solid rgb(239, 208, 148);
+}
+.col-md-6 h3{
+    color: rgb(177, 90, 90);
+    text-decoration: underline;
+    
+}
+
+.col-md-6 p{
+    
+    color: rgb(100, 4, 4);
+}
+
+.row{
+    padding: 10px;
+    margin: 15px 5px;
+    background-color: beige;
+    border-radius: 10px;
+}
+.col-md-12 h3{
+    color: rgb(35, 68, 124);
+    text-decoration: underline;
+}
+.col-md-12 p{
+    color: rgb(7, 71, 89);
+}
+
