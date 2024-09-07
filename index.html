@@ -54,12 +54,11 @@
         <div class="container mb-4">
             <input type="text" id="search-bar" class="form-control" placeholder="Search for museums..." onkeyup="filterMuseums()">
         </div>
-        <br>
 
         <div class="container">
             <h2>Featured Museums</h2>
             <div id="museum-list" class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 museum-item">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top" src="national-museum.jpg" alt="National Museum">
                         <div class="card-body">
@@ -71,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 museum-item">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top" src="art-gallery.jpg" alt="Art Gallery">
                         <div class="card-body">
@@ -83,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 museum-item">
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top" src="science-museum.jpg" alt="Science Museum">
                         <div class="card-body">
@@ -95,9 +94,46 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 museum-item">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="national-museum.jpg" alt="Car Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Car Museum</h5>
+                            <p class="card-text">Explore the nation's history and cultural heritage.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" onclick="selectMuseum('Car Museum')">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 museum-item">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="national-museum.jpg" alt="Sardar Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Sardar Museum</h5>
+                            <p class="card-text">Explore the nation's history and cultural heritage.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" onclick="selectMuseum('Sardar Museum')">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4 museum-item">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="national-museum.jpg" alt="LD Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">LD Museum</h5>
+                            <p class="card-text">Explore the nation's history and cultural heritage.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" onclick="selectMuseum('LD Museum')">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
 
     <footer class="text-muted text-center py-4">
         <div class="container">
@@ -105,8 +141,14 @@
         </div>
     </footer>
 
+<<<<<<< Updated upstream
     <script src="script.js">       
     </script>
+=======
+    <!-- Chatbot Script Integration -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/339c05eb-18cc-4a71-ba3c-9fdec5a07ce6/webchat/v2.1/config.js"></script>
+>>>>>>> Stashed changes
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
