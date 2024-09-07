@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-    const museums = {
+    const museum = {
         "National Museum": {
             name: "National Museum",
             description: "Explore the nation's history and cultural heritage with a vast collection of artifacts.",
