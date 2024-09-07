@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-    
+
     function selectMuseum(museumName) {
-        window.location.href = `museum-ticket.html?museum=${encodeURIComponent(museumName)}`;
+        window.location.href = `tickets.html?museum=${encodeURIComponent(museumName)}`;
     }
