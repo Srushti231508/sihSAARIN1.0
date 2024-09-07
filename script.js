@@ -134,3 +134,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
     
+    function selectMuseum(museumName) {
+        window.location.href = `museum-ticket.html?museum=${encodeURIComponent(museumName)}`;
+    }
+
+    // Filter museums based on search input
+    function filterMuseums() {
+        const searchValue = document.getElementById('search-bar').value.toLowerCase();
+        const museums = document.getElementsByClassName('museum-item');
+
+        for (let i = 0; i < museums.length; i++) {
+            const museumTitle = museums[i].getElementsByClassName('card-title')[0].innerText.toLowerCase();
+            if (museumTitle.includes(searchValue)) {
+                museums[i].style.display = '';
+            } else {
+                museums[i].style.display = 'none';
+            }
+        }
+    }
+    
+    function selectMuseum(museumName) {
+        window.location.href = `museum-ticket.html?museum=${encodeURIComponent(museumName)}`;
+    }

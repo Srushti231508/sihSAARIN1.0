@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museum Name | Home</title>
+    <title>Museum Collection | Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Museum Name</a>
+            <a class="navbar-brand" href="#">Museum Collection</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,33 +38,80 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section class="jumbotron text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">Welcome to the Museum</h1>
-                <p class="lead text-muted">Explore our rich collection of artifacts and exhibits.<br> Discover the history and culture that shaped our world.</p>
+                <h1 class="jumbotron-heading">Welcome to Our Museum Collection</h1>
+                <p class="lead text-muted">Explore a diverse range of museums and their incredible collections.<br> Select a museum and discover the stories they have to tell.</p>
                 <p>
-                    <a href="tickets.html" class="btn btn-primary my-2">Buy Tickets</a>
-                    <a href="exhibits.html" class="btn btn-secondary my-2">View Exhibits</a>
+                    <a href="#museum-list" class="btn btn-primary my-2">Browse Museums</a>
+                    <a href="tickets.html" class="btn btn-secondary my-2">Buy Tickets</a>
                 </p>
             </div>
         </section>
 
+        <div class="container mb-4">
+            <input type="text" id="search-bar" class="form-control" placeholder="Search for museums..." onkeyup="filterMuseums()">
+        </div>
+        <br>
+
         <div class="container">
-            <h2 >Featured Exhibits</h2>
-            <div class="row">
-                <!-- Add exhibit cards here -->
+            <h2>Featured Museums</h2>
+            <div id="museum-list" class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="national-museum.jpg" alt="National Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">National Museum</h5>
+                            <p class="card-text">Explore the nation's history and cultural heritage.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" onclick="selectMuseum('National Museum')">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="art-gallery.jpg" alt="Art Gallery">
+                        <div class="card-body">
+                            <h5 class="card-title">Art Gallery</h5>
+                            <p class="card-text">Immerse yourself in art from different eras and movements.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" onclick="selectMuseum('Art Gallery')">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="science-museum.jpg" alt="Science Museum">
+                        <div class="card-body">
+                            <h5 class="card-title">Science Museum</h5>
+                            <p class="card-text">Discover the wonders of science and technology.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary" onclick="selectMuseum('Science Museum')">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
     <footer class="text-muted text-center py-4">
         <div class="container">
-            <p>&copy; 2024 Museum Name. All rights reserved.</p>
+            <p>&copy; 2024 Museum Collection. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js">       
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/339c05eb-18cc-4a71-ba3c-9fdec5a07ce6/webchat/v2.1/config.js"></script>
 </body>
 </html>
