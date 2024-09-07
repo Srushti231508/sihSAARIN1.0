@@ -1,18 +1,51 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.6; 
 }
+header{
+    background: transparent;
+}
+
+div ul li:hover{
+    background-color: rgb(215, 211, 211);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.jumbotron-heading{
+    color:white;
+}
+
 
 .jumbotron {
     background: url('museum-banner.jpg') no-repeat center center;
     background-size: cover;
     color: white;
 }
-
 .navbar-brand {
     font-weight: bold;
 }
 
-footer {
-    background-color: #f8f9fa;
+div h2{
+    color: white;
+}
+
+footer div p{
+    color: white;
+}
+
+div h1{
+    color: white;
+}
+div p{
+    color: white;
+}
+
+form div label{
+    color: rgb(196, 191, 191);
 }
