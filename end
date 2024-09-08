@@ -1,0 +1,203 @@
+[33mcommit b67cfdeca8f90e68a329d3541804994e1b362672[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Sun Sep 8 13:49:58 2024 +0530
+
+    Create new
+
+[33mcommit 6258079dc85a9b7b4cd2776533b6accc09cf2c22[m
+Merge: e072acb ba85bca
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Sun Sep 8 13:28:36 2024 +0530
+
+    Merge pull request #2 from het1550/images
+    
+    Add files via upload
+
+[33mcommit ba85bcae3c81dbc5d88fb173f2b8c792b5ecaa4e[m[33m ([m[1;31morigin/images[m[33m)[m
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Sun Sep 8 13:28:01 2024 +0530
+
+    Add files via upload
+
+[33mcommit e072acba038b9d86493f83eeccab09b4755dc91e[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sun Sep 8 13:04:54 2024 +0530
+
+    Update styles.css
+
+[33mcommit ab0a33dd644d336c004c52ba702f49cef8ee29c3[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sun Sep 8 12:59:31 2024 +0530
+
+    css
+
+[33mcommit 7a1a51f6e07dda4fdaebe7a2b859dfd9b548ab9b[m
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Sun Sep 8 11:10:28 2024 +0530
+
+    Add files via upload
+
+[33mcommit 640e8c737a077b772d726388ce45fa9d324215d0[m
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Sun Sep 8 10:58:02 2024 +0530
+
+    Add files via upload
+
+[33mcommit 924de21580cae89952f1fb8a4fb741028f185c7c[m
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Sun Sep 8 10:49:36 2024 +0530
+
+    bg image exhibit page
+
+[33mcommit ce9337c0d4325d429292314fc9e7d7c331d447e0[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 22:56:49 2024 +0530
+
+    some updates
+
+[33mcommit 7d557b9ee58bcc86b715ceafd75fedd6c6de1923[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 22:38:07 2024 +0530
+
+    Update styles.css
+
+[33mcommit 54fcd7d55e3120b78516c8b1d38ba44068759a2b[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 22:37:23 2024 +0530
+
+    css updates
+
+[33mcommit 4b22bc891905dfb82fe7b9ff077fd6d1aa4fb465[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 22:07:42 2024 +0530
+
+    new css
+
+[33mcommit 08afdf38685b92bca09799249699f92c534fc3d9[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 19:32:45 2024 +0530
+
+    search bar updated
+
+[33mcommit 52a59c2239ff6032173f5375c28c8c0fe893ea8d[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 18:42:15 2024 +0530
+
+    css changes
+
+[33mcommit f767ad9412abb9899bed86f2f0e4a771fa72fdd9[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 13:20:01 2024 +0530
+
+    Update visitor-info.html
+
+[33mcommit 6d16ed44526638095f5db880df1b3b0d5b4eb449[m
+Merge: 052aeba afac934
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 12:08:48 2024 +0530
+
+    Merge branch 'main' of https://github.com/het1550/sihSAARIN1.0
+
+[33mcommit 052aeba643544e7e239bf171c58c0a512779f827[m
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 12:08:27 2024 +0530
+
+    Updated
+
+[33mcommit afac9341c93d877a9bec94713c3ded056bb98422[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 12:03:56 2024 +0530
+
+    Update index.html
+
+[33mcommit f6f6940e45fcb5827fd08d3524f72f8793f57c51[m
+Merge: 6d7b359 5123e62
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 11:52:07 2024 +0530
+
+    Merge branch 'main' of https://github.com/het1550/sihSAARIN1.0
+
+[33mcommit 6d7b3596380ab384940a71578eecf1e63fc0bead[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 11:51:48 2024 +0530
+
+    search bar added
+
+[33mcommit 5123e620ab26989f3db7fdc735cb74b39b14c21e[m
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 11:39:54 2024 +0530
+
+    more CSS added
+
+[33mcommit 30a4cb744b887a73a51e099da1b0a3b7d929a00d[m
+Author: Het <het.vaghasiya2004@gmail.com>
+Date:   Sat Sep 7 10:51:41 2024 +0530
+
+    Added Museums
+
+[33mcommit 960ac320c6fed6f0ee7b0302a931fe9faade2964[m
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 10:52:11 2024 +0530
+
+    Modified
+
+[33mcommit f284b2fd63e5f41d3c816e5a1c08471b6bf0eaa1[m
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 10:47:12 2024 +0530
+
+    Added
+
+[33mcommit 838d8f2d2d66c9b7212ff1a572c4993ff26acd5f[m
+Merge: 0b523b6 030163d
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 10:33:04 2024 +0530
+
+    Merge branch 'main' of https://github.com/het1550/sihSAARIN1.0
+
+[33mcommit 0b523b6630258572e2f8569ff46d3d98012a2997[m
+Author: Sameer-0904 <sameerprajapati0904@gmail.com>
+Date:   Sat Sep 7 10:13:33 2024 +0530
+
+    Add some CSS and background image
+
+[33mcommit 030163d4e2ab02a0d97e7a834ede01fe223ad757[m
+Author: HARSH SONI <142156326+Thun3rClap@users.noreply.github.com>
+Date:   Fri Sep 6 21:51:58 2024 +0530
+
+    Delete chatbot.html
+
+[33mcommit 6f3952fdf655ba689492babd818a943f354fd585[m
+Author: HARSH SONI <142156326+Thun3rClap@users.noreply.github.com>
+Date:   Fri Sep 6 21:51:43 2024 +0530
+
+    Delete chatbot.js
+
+[33mcommit f1d9e17439863bb24a7b797ecf409c1b7f4c8ea3[m
+Author: HARSH SONI <142156326+Thun3rClap@users.noreply.github.com>
+Date:   Fri Sep 6 21:51:28 2024 +0530
+
+    Delete chatbot.css
+
+[33mcommit d1c90aeb48cfad1e85569b17a4b69f791bf20de3[m
+Author: HARSH SONI <142156326+Thun3rClap@users.noreply.github.com>
+Date:   Fri Sep 6 21:45:21 2024 +0530
+
+    Create chatbot.js
+
+[33mcommit 22890b4f4439b0d69ee1859794f7487edff47e0c[m
+Author: HARSH SONI <142156326+Thun3rClap@users.noreply.github.com>
+Date:   Fri Sep 6 21:44:48 2024 +0530
+
+    Create chatbot.css
+
+[33mcommit 2b0cb9b0baad9d14eefee692e0aba283c6a37c7b[m
+Author: HARSH SONI <142156326+Thun3rClap@users.noreply.github.com>
+Date:   Fri Sep 6 21:44:15 2024 +0530
+
+    Create chatbot.html
+
+[33mcommit 295112c024798b3aec16a13606a4a9c3327ca243[m
+Author: Het <69184446+het1550@users.noreply.github.com>
+Date:   Fri Sep 6 18:13:12 2024 +0530
+
+    Add files via upload
