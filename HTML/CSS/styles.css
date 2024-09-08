@@ -113,10 +113,8 @@ main div h3{
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card{
-    box-shadow: 2px 2px 4px black;
     border-color: black;
-   border-top-right-radius: 7%;
-   border-radius: 7%;
+    border-radius: 7%;
 }
 
 .exhibit{
@@ -159,6 +157,8 @@ html,body{
 .card-img-top{
     width: 328px;
     height: 200px;
+    border-top-right-radius: 9%;
+    border-top-left-radius: 9%;
 }
 
 .con{
