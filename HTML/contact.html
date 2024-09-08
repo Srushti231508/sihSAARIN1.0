@@ -7,87 +7,75 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
     <style>
-        body {
-            background-color: #f9f7f7;
-            font-family: Arial, sans-serif;
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
-        header {
-            margin-bottom: 30px;
+        body{
+            font-family: 'Outfit';
+            background: linear-gradient(90deg, rgba(142, 202, 228, 1) 0%, rgba(224, 238, 251, 1) 100%)
         }
-        .navbar {
-            border-bottom: 2px solid #e0e0e0;
+        .contact-container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
         }
-        .navbar-brand {
-            font-weight: bold;
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
         }
-        .navbar-nav .nav-link {
-            font-weight: 500;
+        .contact-left-title h2{
+            font-weight: 600;
+            color: #a363aa;
+            font-size: 40px;
+            margin-bottom: 5px;
         }
-        .navbar-nav .nav-item.active .nav-link {
-            color: #007bff;
-            font-weight: bold;
-        }
-        .container {
-            background-color: #b2d6ee;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            max-width: 800px;
-            margin-top: 20px;
-        }
-        .form-group label {
-            font-weight: bold;
-        }
-        .form-control {
-            border-radius: 4px;
-            border: 1px solid #ced4da;
-            padding: 10px;
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-        }
-        .form-control:focus {
-            border-color: #80bdff;
-            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            border-radius: 4px;
-            padding: 10px 20px;
-            font-weight: bold;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
-        h1 {
-            font-size: 2rem;
-            color: #020202;
+        .contact-left-title hr{
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: #a363aa;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
-        footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #e0e0e0;
-            padding: 20px 0;
+        .contact-inputs{
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500px;
+            border-radius: 20px;
+            color: #666;
         }
-        .rating {
-            direction: rtl;
-            display: inline-block;
+        .contact-left textarea{
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
         }
-        .rating input {
-            display: none;
+        .contact-inputs:focus{
+            border: 2px solid rgb(150, 150, 249);
         }
-        .rating label {
-            color: #ddd;
-            font-size: 1.5em;
+        .contact-left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 20px;
+            background:  rgb(46, 185, 245) ;
             cursor: pointer;
-            display: inline-block;
-            transition: color 0.2s;
         }
-        .rating label:hover,
-        .rating label:hover ~ label,
-        .rating input:checked ~ label {
-            color: #ffc107;
+        .contact-left button:hover{
+            background:rgb(68, 192, 245) ;
         }
+
     </style>
 </head>
 <body>
@@ -123,47 +111,20 @@
         <br><br>
     </header>
     <main>
-        <div class="container">
-            <h1>Contact Us</h1>
-            <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Contact Us</h2>
+                    <hr>
+                </div>
                 <input type="hidden" name="access_key" value="36509b7b-997f-42e4-bb79-40a72d3c5aad">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Your message" ></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="additional-feedback">Additional Feedback</label>
-                    <textarea class="form-control" id="additional-feedback" rows="5" placeholder="Your additional feedback" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="rating">Rating</label>
-                    <div class="rating">
-                        <input type="radio" name="rating" id="star5" value="5" />
-                        <label for="star5" title="5 stars">&#9733;</label>
-
-                        <input type="radio" name="rating" id="star4" value="4" />
-                        <label for="star4" title="4 stars">&#9733;</label>
-
-                        <input type="radio" name="rating" id="star3" value="3" />
-                        <label for="star3" title="3 stars">&#9733;</label>
-
-                        <input type="radio" name="rating" id="star2" value="2" />
-                        <label for="star2" title="2 stars">&#9733;</label>
-
-                        <input type="radio" name="rating" id="star1" value="1" />
-                        <label for="star1" title="1 star">&#9733;</label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your message" class="contact-inputs"></textarea>
+                <textarea name="feedback" placeholder="Your Additional Feedback" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
             </form>
+           
         </div>
     </main>
     <footer class="text-muted text-center">
