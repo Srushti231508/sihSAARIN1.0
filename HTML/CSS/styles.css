@@ -148,3 +148,8 @@ background: linear-gradient(90deg,rgba(142,202,228,1) 0%, rgba(224,238,251,1) 10
 .card-text{
     color: black;
 }
+
+.card-img-top{
+    width: 328px;
+    height: 200px;
+}
