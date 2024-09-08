@@ -1,5 +1,4 @@
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -109,4 +108,39 @@ main div h3{
     width: 100%;
     z-index: 1;
    top: 0;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exhibit{
+    background-image: url(museum-exhibit-design.jpg);
+    background-size: cover;
+    
+    
+}
+html,body{
+    height: 100%;
+}
+.py-4{
+    height: 100px; /* Adjust based on the actual height of your footer */
+    /* background-color: #333;
+    color: white; */
+    text-align: center;
+    line-height: 100px; /* Vertically centers the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.content{
+    min-height: calc(100vh - 100px); /* Adjust the 100px to the height of your footer */
+
+}
+
+
+.bg-image{
+    background-image: url(events.webp);
+}
+
+.tickets{
+    background: rgb(224,238,251);
+background: linear-gradient(90deg,rgba(142,202,228,1) 100%, rgba(224,238,251,1) 0%);
 }
