@@ -21,6 +21,8 @@ div ul li:hover{
     font-size: 60px;
     line-height: 60px;
     max-width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 .spline{
