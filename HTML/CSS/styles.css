@@ -160,7 +160,7 @@ html,body{
     width: 328px;
     height: 200px;
     border-top-right-radius: 9%;
-    border-top-left-radius: 9%;
+    border-top-left-radius: 9%; 
 }
 
 .con{
@@ -169,8 +169,7 @@ html,body{
   padding: 75px 50px;
   border: 0px;
   margin: 0;
-background-color: rgb(103, 97, 97);
-border-radius: 10px;
-box-shadow: 5px;
+  background-color: rgb(103, 97, 97);
+  border-radius: 10px;
+  box-shadow: 5px;
 }
-
