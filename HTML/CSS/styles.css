@@ -114,7 +114,8 @@ main div h3{
 }
 .card{
     border-color: black;
-    border-radius: 7%;
+   border-top-right-radius: 7%;
+   border-radius: 7%;
 }
 
 .exhibit{
@@ -155,6 +156,7 @@ html,body{
 }
 
 .card-img-top{
+    
     width: 328px;
     height: 200px;
     border-top-right-radius: 9%;
@@ -171,3 +173,4 @@ background-color: rgb(103, 97, 97);
 border-radius: 10px;
 box-shadow: 5px;
 }
+
