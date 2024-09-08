@@ -15,9 +15,10 @@
         body{
             font-family: 'Outfit';
             background: linear-gradient(90deg, rgba(142, 202, 228, 1) 0%, rgba(224, 238, 251, 1) 100%)
+            
         }
         .contact-container{
-            height: 100vh;
+            height: 140vh;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -75,6 +76,33 @@
         .contact-left button:hover{
             background:rgb(68, 192, 245) ;
         }
+        .rating{
+            direction: rtl;
+            display: inline-block;
+        }
+        .rating input{
+            display: none;
+        }
+        .rating label{
+            color: #ddd;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+        .rating label:hover,
+        .rating label:hover~label,
+        .rating label:checked~label{
+            color: #ffc107;
+        }
+        #rating1{
+            color:#666;
+            padding: 15px 15px;
+            margin: 5px;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 15px;
+        }
 
     </style>
 </head>
@@ -122,6 +150,23 @@
                 <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
                 <textarea name="message" placeholder="Your message" class="contact-inputs"></textarea>
                 <textarea name="feedback" placeholder="Your Additional Feedback" class="contact-inputs" required></textarea>
+                <label for="rating" id="rating1">Rating</label>
+                <div class="rating">
+                    <input type="radio" name="rating" id="star5" value="5">
+                    <label for="star5" title="5 star">&#9733;</label>
+
+                    <input type="radio" name="rating" id="star4" value="4">
+                    <label for="star4" title="4 star">&#9733;</label>
+
+                    <input type="radio" name="rating" id="star3" value="3">
+                    <label for="star3" title="3 star">&#9733;</label>
+
+                    <input type="radio" name="rating" id="star2" value="2">
+                    <label for="star2" title="2 star">&#9733;</label>
+
+                    <input type="radio" name="rating" id="star1" value="1">
+                    <label for="star1" title="1 star">&#9733;</label>
+                </div>
                 <button type="submit">Submit</button>
             </form>
            
