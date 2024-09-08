@@ -34,7 +34,7 @@ div ul li:hover{
 
 
 .jumbotron {
-    background: url('museum-banner.jpg') no-repeat center center;
+    background: url() no-repeat center center;
     background-size: cover;
     color: white;
 }
@@ -112,7 +112,7 @@ main div h3{
 }
 
 .exhibit{
-    background-image: url(museum-exhibit-design.jpg);
+    background-image: url(/Assets/IMAGES/museum-exhibit-design.jpg);
     background-size: cover;
     
     
@@ -137,7 +137,7 @@ html,body{
 
 
 .bg-image{
-    background-image: url(events.webp);
+    background-image: url(/Assets/IMAGES/events.webp);
 }
 
 .tickets{
