@@ -158,7 +158,9 @@ html,body{
 }
 
 .card-img-top{
-    border-image: auto;
+    
+    width: 328px;
+    height: 200px;
 }
 
 .con{
@@ -171,3 +173,4 @@ background-color: rgb(103, 97, 97);
 border-radius: 10px;
 box-shadow: 5px;
 }
+
