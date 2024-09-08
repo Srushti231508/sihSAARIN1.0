@@ -144,3 +144,7 @@ html,body{
     background: rgb(224,238,251);
 background: linear-gradient(90deg,rgba(142,202,228,1) 0%, rgba(224,238,251,1) 100%);
 }
+
+.card-text{
+    color: black;
+}
