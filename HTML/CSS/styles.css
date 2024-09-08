@@ -117,6 +117,7 @@ main div h3{
     border-color: black;
    border-top-right-radius: 7%;
    border-radius: 7%;
+
 }
 
 .exhibit{
@@ -157,8 +158,7 @@ html,body{
 }
 
 .card-img-top{
-    width: 328px;
-    height: 200px;
+    border-image: auto;
 }
 
 .con{
