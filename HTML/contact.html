@@ -85,32 +85,29 @@
         background: rgb(68, 192, 245);
       }
       .rating {
-        direction: rtl;
-        display: inline-block;
-      }
-      .rating input {
-        display: none;
-      }
-      .rating label {
-        color: #ddd;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: inline-block;
-        transition: color 0.2s;
-      }
-      .rating label:hover,
-      .rating label:hover ~ label,
-      .rating label:checked ~ label {
-        color: #ffc107;
-      }
-      #rating1 {
-        color: #666;
-        padding: 15px 15px;
-        margin: 5px;
-        background-color: white;
-        border-radius: 5px;
-        font-size: 15px;
-      }
+  direction: rtl; /* This ensures the stars are displayed in the correct order */
+  display: inline-block;
+}
+
+.rating input {
+  position: absolute;
+  left: -9999px; /* Hide inputs off-screen */
+}
+
+.rating label {
+  color: #ddd;
+  font-size: 2rem; /* Adjust size of stars */
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+  color: #ffc107; /* Color of the stars when hovered or selected */
+}
+
     </style>
   </head>
   <body>
