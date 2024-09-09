@@ -150,3 +150,23 @@ html,body{
     bottom: 0;
     width: 100%;
 }
+
+#total-calculation {
+    margin-top: 2em;
+    padding: 1em;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+#total-calculation h3 {
+    margin-bottom: 1em;
+}
+
+#total-calculation p {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+#total-calculation p:first-of-type {
+    font-weight: bold;
+}
