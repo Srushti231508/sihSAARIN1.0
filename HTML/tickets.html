@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum Name | Tickets</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- <link rel="stylesheet" href="CSS/styles.css"> -->
+    <link rel="stylesheet" href="CSS/tickets.css">
 </head>
 <body class="tickets"> 
     <header>
@@ -42,46 +43,67 @@
     <main class="content">
         <div class="container mt-5">
             <div class="con">
-            <h1>Buy Tickets</h1>
-            <p>Select the date and time of your visit.</p>
-            <form id="ticket-form">
-                <div class="form-group">
-                    <label for="visit-date">Date:</label>
-                    <input type="date" class="form-control" id="visit-date" required>
-                    <small id="date-error" class="form-text text-danger"></small>
-                </div>
-                <div class="form-group">
-                    <label for="visit-time">Time:</label>
-                    <input type="time" class="form-control" id="visit-time" required>
-                    <small id="time-error" class="form-text text-danger"></small>
-                </div>
-                <div class="form-group">
-                    <label for="ticket-type">Ticket Type:</label>
-                    <select class="form-control" id="ticket-type" required>
-                        <option value="adult">Adult - $20</option>
-                        <option value="child">Child - $10</option>
-                        <option value="senior">Senior - $15</option>
-                        <option value="student">Student - $12</option>
+                <h1>Buy Tickets</h1>
+                <p>Select the date, time, and details of your visit.</p>
+                <div class="form1">
+                <form id="ticket-form">
+                    <!-- Museum selection -->
+                    <label for="museum-name">Select Museum:</label>
+                    <select id="museum-name">
+                        <option value="">Select a museum</option>
+                        <option value="Lalbhai Dalpatbhai Museum">Lalbhai Dalpatbhai Museum</option>
+                        <option value="Vikram Sarabhai Space Exhibition Center (ISRO)">Vikram Sarabhai Space Exhibition Center (ISRO)</option>
+                        <option value="Shreyas Folk Museum">Shreyas Folk Museum</option>
+                        <option value="The Calico Museum of Textiles">The Calico Museum of Textiles</option>
+                        <option value="Auto World Vintage Car Museum">Auto World Vintage Car Museum</option>
+                        <option value="NC Mehta Gallery">NC Mehta Gallery</option>
+                        <option value="Conflictorium">Conflictorium</option>
                     </select>
-                    <small id="type-error" class="form-text text-danger"></small>
-                </div>
-                <div class="form-group">
-                    <label for="phone-number">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone-number" placeholder="+1234567890" required>
-                    <small id="phone-error" class="form-text text-danger"></small>
-                </div>
-                <div class="form-group">
+                
+                    <!-- Ticket Categories -->
+                    <label for="adult-ticket">Adult Tickets:</label>
+                    <input type="number" id="adult-ticket" value="0" min="0">
+                    
+                    <label for="children-ticket">Children Tickets:</label>
+                    <input type="number" id="children-ticket" value="0" min="0">
+                
+                    <!-- Date -->
+                    <label for="visit-date">Visit Date:</label>
+                    <input type="date" id="visit-date">
+                    <div id="date-error" class="error"></div>
+                
+                    <!-- Time -->
+                    <!-- Time -->
+                    <label for="visit-time">Visit Time:</label>
+                    <input type="time" id="visit-time" min="00:00" max="23:59">
+                    <div id="time-error" class="error"></div>
+
+                
+                    <!-- Phone Number -->
+                    <label for="phone-number">Phone Number (International format):</label>
+                    <input type="tel" id="phone-number" placeholder="+1234567890">
+                    <div id="phone-error" class="error"></div>
+                
+                    <!-- Delivery Method -->
                     <label for="delivery-method">Delivery Method:</label>
-                    <select class="form-control" id="delivery-method" required>
+                    <select id="delivery-method">
+                        <option value="">Select delivery method</option>
+                        <option value="email">Email</option>
                         <option value="whatsapp">WhatsApp</option>
                         <option value="sms">SMS</option>
                     </select>
-                    <small id="delivery-error" class="form-text text-danger"></small>
+                    <div id="delivery-error" class="error"></div>
+                
+                    <!-- Submit Button -->
+                    <button type="submit">Buy Tickets</button>
+                </form>
+            </div>
+                <!-- Museum Info -->
+                <div id="museum-info">
+                    <p id="museum-timing"></p>
+                    <p id="museum-ticket"></p>
                 </div>
-                <button type="submit" class="btn btn-primary">Purchase</button>
-            </form>
-        </div>
-    </div>
+                
     </main>
     <footer class="text-muted text-center py-4">
         <div class="container">
