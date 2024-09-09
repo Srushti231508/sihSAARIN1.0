@@ -115,6 +115,7 @@ main div h3{
 .card{
     border-color: black;
    border-top-right-radius: 7%;
+   border-top-left-radius: 7%;
    border-radius: 7%;
 }
 
@@ -159,8 +160,8 @@ html,body{
     
     width: 328px;
     height: 200px;
-    border-top-right-radius: 9%;
-    border-top-left-radius: 9%; 
+    border-top-right-radius: 9.5%;
+    border-top-left-radius: 9.5%; 
 }
 
 .con{
