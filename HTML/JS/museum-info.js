@@ -49,7 +49,6 @@ const museumsData = {
         additionalDetails: "This museum offers a unique collection of traditional arts, rare artifacts..."}
 };
 
-// Function to get the query parameter from the URL
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
@@ -67,6 +66,7 @@ function loadMuseumData() {
 
         // Load images into the gallery
         const galleryDiv = document.getElementById("museum-gallery");
+        galleryDiv.innerHTML = '';  // Clear previous content
         museumInfo.images.forEach(imageUrl => {
             const imgElement = document.createElement("img");
             imgElement.src = imageUrl;
@@ -86,11 +86,51 @@ function loadMuseumData() {
             videoDiv.innerHTML = `<h5>Watch More</h5>
                                   <iframe width="100%" height="315" src="${museumInfo.video}" frameborder="0" allowfullscreen></iframe>`;
         }
+
+        // Ensure the speech synthesis works correctly
+        document.getElementById("speak-button").addEventListener("click", function() {
+            speakDescription(museumInfo.description);
+        });
+        // Add event listener to the "Stop Listening" button
+        document.getElementById("stop-button").addEventListener("click", function() {
+            stopSpeech();
+        });
+
     } else {
         document.getElementById("museum-title").textContent = "Museum not found";
         document.getElementById("museum-content").innerHTML = "<p>We couldn't find the museum you were looking for.</p>";
     }
 }
+
+// Function to speak the museum description
+function speakDescription(text) {
+    if ('speechSynthesis' in window) {
+        const message = new SpeechSynthesisUtterance();
+        message.text = text;
+        message.lang = 'en-US';  // Optionally set the language
+        window.speechSynthesis.speak(message);
+    } else {
+        alert('Sorry, your browser does not support speech synthesis.');
+    }
+}
+// Function to stop the speech synthesis
+function stopSpeech() {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+    }
+}
+// Stop speech when user navigates away from the page or closes it
+window.addEventListener("beforeunload", function () {
+    stopSpeech(); // Stop speech synthesis when the user closes or reloads the page
+});
+
+// Stop speech when the page becomes hidden (e.g., switching tabs)
+document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "hidden") {
+        stopSpeech(); // Stop speech synthesis when the page is hidden
+    }
+});
+
 
 // Call the function to load museum data when the page loads
 document.addEventListener("DOMContentLoaded", loadMuseumData);

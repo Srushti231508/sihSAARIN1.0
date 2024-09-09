@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="CSS/styles.css">
     </head>
     <style>
-        .mt-5 h1{
+        .mt-5 h1 {
             color: black;
         }
-        .mt-4{
+        .mt-4 {
             color: black;
         }
-        body{
+        body {
             background-image: url(/Assets/IMAGES/background.jpeg);
             background-color: black;
         }
@@ -40,9 +40,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
                     </li>
-                    <!-- <li class="nav-item"> -->
-                        <!-- <a class="nav-link" href="visitor-info.html">Visitor Info</a> -->
-                    <!-- </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
@@ -54,22 +51,14 @@
     <div class="container mt-5">
         <h1 id="museum-title">Museum Name</h1>
 
-        <!-- Section for dynamic content -->
         <div id="museum-content" class="mt-4">
-            <!-- Image Gallery -->
-            <div id="museum-gallery" class="row">
-                <!-- Dynamic images will be inserted here -->
-            </div>
-            
-            <!-- Description and Additional Details -->
-            <div id="museum-description" class="mt-4">
-                <!-- Description will be dynamically inserted here -->
-            </div>
-            
-            <!-- Optional Video Section -->
-            <div id="museum-video" class="mt-4">
-                <!-- Video will be dynamically inserted here if available -->
-            </div>
+            <div id="museum-gallery" class="row"></div>
+            <div id="museum-description" class="mt-4"></div>
+            <div id="museum-video" class="mt-4"></div>
+
+            <!-- Button to trigger speech synthesis -->
+            <button id="speak-button" class="btn btn-primary mt-3">Listen to Description</button>
+            <button id="stop-button" class="btn btn-primary mt-3">Stop</button>
         </div>
     </div>
     <footer class="text-muted text-center py-4">
@@ -77,7 +66,6 @@
             <p>&copy; 2024 Museum Collection. All rights reserved.</p>
         </div>
     </footer>
-    <script src="JS/museum-info.js">
-    </script>
+    <script src="JS/museum-info.js"></script>
 </body>
 </html>
