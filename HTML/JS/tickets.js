@@ -204,3 +204,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
     visitTime.addEventListener('change', enforceTimeIntervals);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const adultTicketInput = document.getElementById("adult-ticket");
+    const childrenTicketInput = document.getElementById("children-ticket");
+    const museumSelect = document.getElementById("museum-name");
+    const adultTotal = document.getElementById("adult-total");
+    const childrenTotal = document.getElementById("children-total");
+    const totalPayment = document.getElementById("total-payment");
+
+    const museumPrices = {
+        "Lalbhai Dalpatbhai Museum": { adult: 0, children: 0 },
+        "Vikram Sarabhai Space Exhibition Center (ISRO)": { adult: 0, children: 0 },
+        "Shreyas Folk Museum": { adult: 30, children: 30 },
+        "The Calico Museum of Textiles": { adult: 0, children: 0 },
+        "Auto World Vintage Car Museum": { adult: 50, children: 50 },
+        "NC Mehta Gallery": { adult: 0, children: 0 },
+        "Conflictorium": { adult: 50, children: 10 }
+    };
+
+    function updateTotals() {
+        const selectedMuseum = museumSelect.value;
+        const numAdultTickets = parseInt(adultTicketInput.value) || 0;
+        const numChildrenTickets = parseInt(childrenTicketInput.value) || 0;
+
+        if (selectedMuseum) {
+            const prices = museumPrices[selectedMuseum];
+            const adultTicketPrice = prices.adult;
+            const childrenTicketPrice = prices.children;
+
+            const totalAdult = numAdultTickets * adultTicketPrice;
+            const totalChildren = numChildrenTickets * childrenTicketPrice;
+            const total = totalAdult + totalChildren;
+
+            // Update the display
+            adultTotal.textContent = `Adult Ticket Total: ₹${totalAdult}`;
+            childrenTotal.textContent = `Children Ticket Total: ₹${totalChildren}`;
+            totalPayment.textContent = `Total Payment: ₹${total}`;
+        } else {
+            // If no museum is selected, reset totals
+            adultTotal.textContent = `Adult Ticket Total: ₹0`;
+            childrenTotal.textContent = `Children Ticket Total: ₹0`;
+            totalPayment.textContent = `Total Payment: ₹0`;
+        }
+    }
+
+    // Attach event listeners
+    adultTicketInput.addEventListener("input", updateTotals);
+    childrenTicketInput.addEventListener("input", updateTotals);
+    museumSelect.addEventListener("change", updateTotals);
+
+    // Initial call to update totals
+    updateTotals();
+});
