@@ -61,7 +61,8 @@ p {
 #ticket-form input[type="date"], 
 #ticket-form input[type="time"], 
 #ticket-form input[type="tel"], 
-#ticket-form input[type="number"], 
+#ticket-form input[type="number"],
+#ticket-form input[type="email"], 
 #ticket-form select {
     width: 100%;
     padding: 10px;
@@ -154,7 +155,7 @@ html,body{
 #total-calculation {
     margin-top: 2em;
     padding: 1em;
-    background: #e9ecef;
+    background: #ffffff;
     border-radius: 8px;
 }
 
@@ -166,7 +167,11 @@ html,body{
     font-size: 1.1em;
     margin: 0.5em 0;
 }
-
+/* 
 #total-calculation p:first-of-type {
+    font-weight: bold;
+} */
+
+#total-payment{
     font-weight: bold;
 }
