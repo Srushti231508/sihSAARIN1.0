@@ -281,3 +281,4 @@ document.getElementById('museum-name').addEventListener('change', function() {
     }
 });
 
+console.log('Museum Prices:', museumPrices);
