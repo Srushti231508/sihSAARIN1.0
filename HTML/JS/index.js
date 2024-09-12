@@ -31,3 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+
+    // Fetch data from the PHP backend
+fetch('http://localhost/your_repository/api.php')
+.then(response => response.json())
+.then(data => {
+    console.log(data);  // Data fetched from MySQL through PHP
+    // Use the fetched data in your frontend
+})
+.catch(error => console.error('Error:', error));
