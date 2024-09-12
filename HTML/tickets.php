@@ -24,7 +24,7 @@
                         <a class="nav-link" href="exhibits.html">Exhibits</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="tickets.html">Tickets</a>
+                        <a class="nav-link" href="tickets.php">Tickets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
@@ -118,6 +118,41 @@
                 </div>
                 
     </main>
+
+    <?php
+// Connect to the database
+$servername = "localhost";
+$username = "root";
+$password = ""; // your DB password
+$dbname = "museum_ticketing_system";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch all museum prices
+$sql = "SELECT name, ticket_price_adult, ticket_price_children FROM museums";
+$result = $conn->query($sql);
+
+$museums = [];
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $museums[] = $row;
+    }
+}
+
+// Close the connection
+$conn->close();
+
+// Pass museum data as JSON to JavaScript
+echo "<script>var museumPrices = " . json_encode($museums) . ";</script>";
+?>
+
+
     <footer class="text-muted text-center py-4">
         <div class="container">
             <p>&copy; 2024 Museum Name. All rights reserved.</p>
@@ -127,7 +162,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="JS/tickets.js"></script>
-    <link rel="php" href="/php/process_ticket.php">
-    <link rel="php" href="/php/db.php">
+    <!-- <link rel="php" href="/php/process_ticket.php">
+    <link rel="php" href="/php/db.php"> -->
+
 </body>
 </html>

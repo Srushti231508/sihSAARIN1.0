@@ -258,27 +258,26 @@ document.addEventListener("DOMContentLoaded", function () {
 //     updateTotals();
 // });
 
-    // Listen for museum selection changes
-    document.getElementById('museum-name').addEventListener('change', function() {
-        const selectedMuseum = this.value;
+document.getElementById('museum-name').addEventListener('change', function() {
+    const selectedMuseum = this.value;
 
-        // Find the selected museum's prices from the JSON object
-        const museum = museumPrices.find(museum => museum.name === selectedMuseum);
-        
-        if (museum) {
-            // Get the number of adult and children tickets selected
-            const adultTickets = parseInt(document.getElementById('adult-ticket').value);
-            const childrenTickets = parseInt(document.getElementById('children-ticket').value);
+    // Find the selected museum's prices from the JSON object
+    const museum = museumPrices.find(museum => museum.name === selectedMuseum);
+    
+    if (museum) {
+        // Get the number of adult and children tickets selected
+        const adultTickets = parseInt(document.getElementById('adult-ticket').value) || 0;
+        const childrenTickets = parseInt(document.getElementById('children-ticket').value) || 0;
 
-            // Calculate the total cost
-            const totalAdultPrice = adultTickets * museum.adult_price;
-            const totalChildrenPrice = childrenTickets * museum.children_price;
-            const totalPayment = totalAdultPrice + totalChildrenPrice;
+        // Calculate the total cost using the correct field names
+        const totalAdultPrice = adultTickets * museum.ticket_price_adult;
+        const totalChildrenPrice = childrenTickets * museum.ticket_price_children;
+        const totalPayment = totalAdultPrice + totalChildrenPrice;
 
-            // Display the prices
-            document.getElementById('adult-total').innerHTML = "Adult Ticket Total: ₹" + totalAdultPrice;
-            document.getElementById('children-total').innerHTML = "Children Ticket Total: ₹" + totalChildrenPrice;
-            document.getElementById('total-payment').innerHTML = "Total Payment: ₹" + totalPayment;
-        }
-    });
+        // Display the prices
+        document.getElementById('adult-total').innerHTML = "Adult Ticket Total: ₹" + totalAdultPrice;
+        document.getElementById('children-total').innerHTML = "Children Ticket Total: ₹" + totalChildrenPrice;
+        document.getElementById('total-payment').innerHTML = "Total Payment: ₹" + totalPayment;
+    }
+});
 
