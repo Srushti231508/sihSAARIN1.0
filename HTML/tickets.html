@@ -46,18 +46,18 @@
                 <h1>Buy Tickets</h1>
                 <p>Select the date, time, and details of your visit.</p>
                 <div class="form1">
-                <form id="ticket-form">
+                <form id="ticket-form" action="process_ticket.php" method="post">
                     <!-- Museum selection -->
                     <label for="museum-name">Select Museum:</label>
                     <select id="museum-name">
                         <option value="">Select a museum</option>
-                        <option value="Lalbhai Dalpatbhai Museum">Lalbhai Dalpatbhai Museum</option>
-                        <option value="Vikram Sarabhai Space Exhibition Center (ISRO)">Vikram Sarabhai Space Exhibition Center (ISRO)</option>
-                        <option value="Shreyas Folk Museum">Shreyas Folk Museum</option>
-                        <option value="The Calico Museum of Textiles">The Calico Museum of Textiles</option>
-                        <option value="Auto World Vintage Car Museum">Auto World Vintage Car Museum</option>
-                        <option value="NC Mehta Gallery">NC Mehta Gallery</option>
-                        <option value="Conflictorium">Conflictorium</option>
+                        <option value="1">Lalbhai Dalpatbhai Museum</option>
+                        <option value="2">Vikram Sarabhai Space Exhibition Center (ISRO)</option>
+                        <option value="3">Shreyas Folk Museum</option>
+                        <option value="4">The Calico Museum of Textiles</option>
+                        <option value="5">Auto World Vintage Car Museum</option>
+                        <option value="6">NC Mehta Gallery</option>
+                        <option value="7">Conflictorium</option>
                     </select>
                 
                     <!-- Ticket Categories -->
@@ -123,10 +123,11 @@
             <p>&copy; 2024 Museum Name. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="JS/tickets.js"></script>
+    <link rel="php" href="/php/process_ticket.php">
+    <link rel="php" href="/php/db.php">
 </body>
 </html>
